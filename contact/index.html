@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+  <title>Contacter GTech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+</head>
+<body class="font-sans">
+
+<nav class="bg-white p-2 pl-4 sticky top-0 flex justify-between items-center z-10">
+    <a href="/src/"><img src="/media/logo.png" class="w-12 h-12 m-0 mx-auto lg:mx-0" /></a>
+    <div class="">
+        <ul class="p-5 flex justify-end">
+            
+            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
+                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/src/data">Data Science & ML</a>
+            </li>
+            
+            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
+                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/src/3d">Algorithmes 3D</a>
+            </li>
+            
+            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
+                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/src/web">Fullstack</a>
+            </li>
+            
+            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
+                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/">Étude de cas</a>
+            </li>
+            
+            <li class="px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
+                <a class="hover:bg-gray-50 border border-solid border-gray-800 ring-gray-800 shadow-brut bg-white text-gray-800 p-4" href="/src/contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div>
+
+<section class="wrapper bg-indigo-400" id="">
+    <div class="container flex flex-wrap gap-4 justify-evenly items-center">
+      <div class="max-w-xl">
+        <h1 class="text-5xl mb-8 font-serif font-black">
+          Nous contacter
+        </h1>
+        <h2 class="mb-8">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quas atque explicabo beatae ab quae impedit nesciunt saepe eveniet aliquid officia maiores veritatis optio, incidunt, deserunt est tempore nulla autem.
+
+        </h2>
+        
+        
+<a
+    
+
+    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/groscot/30min'});return false;"
+    class="inline-block font-medium shadow-brut px-8 py-4
+        bg-indigo-600 ring-indigo-300 hover:bg-indigo-700 text-indigo-50 ">
+    Prendre rendez-vous pour une visio
+</a>
+
+        
+      </div>
+      <div class="max-w-lg">
+        <img class="block w-full max-w-xs" src="/media/undraw_receipt_re_fre3.png" alt="Devis">
+      </div>
+    </div>
+</section>
+<script>
+function do_scroll() {
+  target = document.querySelectorAll('section.wrapper')[1];
+  window.scrollTo({
+    behavior: 'smooth',
+    top:
+      target.getBoundingClientRect().top -
+      document.body.getBoundingClientRect().top -
+      70,
+  });
+}
+</script>
+<section class="wrapper bg-yellow-50" id="">
+    <div class="container">
+        <h3 class="text-4xl text-center pb-8 font-serif">Une autre demande ?</h3>
+        <p class="max-w-2xl mx-auto">
+            <center>Vous pouvez nous envoyer un mail à <b>contact@groscot.com</b></center>
+        </p>
+        <form class="block max-w-lg mx-auto">
+        
+        <label class="block mt-4 first:mt-0">
+            <span class="block text-sm font-medium text-slate-700">Nom</span>
+            
+            <input type="text" value=""
+            
+            class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+            focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
+            disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+            invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            
+            />
+            
+        </label>
+        
+        <label class="block mt-4 first:mt-0">
+            <span class="block text-sm font-medium text-slate-700">Email</span>
+            
+            <input type="password" value=""
+            
+            class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+            focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
+            disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+            invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            
+            />
+            
+        </label>
+        
+        <label class="block mt-4 first:mt-0">
+            <span class="block text-sm font-medium text-slate-700">Message</span>
+            
+            <textarea rows="5"
+            
+            class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+            focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
+            disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+            invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+            
+            ></textarea>
+            
+        </label>
+        
+        <div class="mt-12 text-center">
+            
+<a
+    
+
+    onclick=""
+    class="inline-block font-medium shadow-brut px-4 py-2
+    bg-white hover:bg-yellow-100 text-yellow-600 border border-solid border-yellow-600 ring-yellow-600 ">
+    Envoyer
+</a>
+
+        </div>
+        </form>
+    </div>
+</section>
+
+</div>
+
+<section class="wrapper bg-white">
+    <div class="container">
+        <div class="flex items-center mb-4">
+        <img src="/media/logo.png" class="w-8 h-8 m-0 mr-3" />
+        <h3 class="font-serif text-2xl font-semibold">Groscot Tech</h3>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-xl font-medium pb-3">Notre expertise</h3>
+                <ul>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/data">Data Science & ML</a>
+</li>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/3d">Algorithmes 3D</a>
+</li>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/web">Fullstack</a>
+</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium pb-3">Travailler avec nous</h3>
+                <ul>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/consulting#methode">Notre méthode de travail</a>
+</li>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/consulting#charte">Charte du consultant</a>
+</li>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/consulting#devis">Demander un devis</a>
+</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-medium pb-3">À propos</h3>
+                <ul>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/apropos">Qui sommes-nous</a>
+</li>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/apropos#legal">Mentions légales</a>
+</li>
+                    
+                    <li class="text-sm py-1 last:pb-0 ">
+    <a class="hover:underline" href="/src/contact">Contact</a>
+</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper bg-white text-center text-xs" style="padding-top: 0 !important;">
+    <div class="container">
+        Copyright © Groscot Tech 2022
+    </div>
+</section>
+
+</body>
+</html>

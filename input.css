@@ -1,0 +1,36 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    @apply px-8 py-8 md:px-16 md:py-12 lg:px-32 lg:py-16;
+}
+
+.wrapper .container {
+    @apply lg:max-w-7xl mx-auto;
+}
+
+.shadow-brut {
+    box-shadow: 0px 0px 0 var(--tw-ring-color);
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: box-shadow 0.25s, top 0.25s, left 0.25s;
+}
+
+.shadow-brut:hover {
+    top: -5px;
+    left: -5px;
+    box-shadow: 5px 5px 0 var(--tw-ring-color);
+    cursor: pointer;
+}
+
+.shadow-brut:active {
+    top: -2px;
+    left: -2px;
+    box-shadow: 1px 1px 0 var(--tw-ring-color);
+}
