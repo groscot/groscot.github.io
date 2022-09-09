@@ -160,24 +160,47 @@ function do_scroll() {
       
     </div>
     <div class="max-w-xl">
-      <img id="carousel_img" src="/static/examples/example.png">
-      <p id="carousel_description" class="mt-4">
-        EXAMPLE A
+      <figure class="h-70">
+      <img id="carousel_img" class="rounded-md shadow-md h-auto" src="/static/examples/cp.png">
+      </figure>
+      <div class="w-full bg-purple-300 rounded-full h-1.5 mt-1">
+        <div id="carousel_progress" class="bg-purple-500 h-1.5 rounded-full"></div>
+      </div>
+      <p id="carousel_description" class="mt-4 h-8">
+        <u>ComprendrePython.fr</u>, méthode gratuite et accessible pour l'apprentissage de la programmation avec Python <i>// Site créé de A à Z (design, front et back, contenu)</i>
       </p>
     </div>
   </div>
 </section>
+<style>
+#carousel_progress {
+  width: 12%;
+  animation-duration: 5.0s;
+  animation-name: progress;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes progress {
+from {
+  width: 100%;
+}
+
+to {
+  width: 1%;
+}
+}
+</style>
 <script>
 const images = [
-  "/static/examples/example.png", "/static/examples/example.png", "/static/examples/example.png"
+  "/static/examples/cp.png", "/static/examples/asphere.png"
 ];
 
 const descriptions = [
-  "EXAMPLE A", "EXAMPLE B", "EXAMPLE C"
+  "<u>ComprendrePython.fr</u>, méthode gratuite et accessible pour l'apprentissage de la programmation avec Python <i>// Site créé de A à Z (design, front et back, contenu)</i>", "<u>ASphere.fr</u>, plateforme pour la formation en IA <i>// Création du site (front et back) à partir d'un design fourni</i>"
 ];
 
 const hrefs = [
-  "/web", "/data", "/contact", 
+  "/web", "/data", 
 ];
 
 var n_examples = descriptions.length;
