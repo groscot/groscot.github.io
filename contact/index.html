@@ -223,9 +223,7 @@ function sendMail() {
     var subject = `[GTECH] Message de ${name} (${mail})`;
     var body = message + `<br><br>${mail}`;
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "gfyck@inboxen.org",
-        Password : "215C65B429E750C540C61E11951F0384297C",
+        SecureToken : "4c141276-9002-47b0-8a86-16934e1d206a",
         To : 'elgroscot@gmail.com',
         From : "gfyck@inboxen.org",
         Subject : subject,
