@@ -6,7 +6,8 @@
 @tailwind utilities;
 
 .wrapper {
-    @apply px-8 py-8 md:px-16 md:py-12 lg:px-32 lg:py-16;
+    @apply px-8 md:px-16 lg:px-32 py-24 -my-16 md:py-20 md:-my-8 lg:py-20 lg:-my-4;
+    /* Real padding values: 8, 12, 16 (+6 with negative margin)*/
 }
 
 .wrapper .container {
