@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/static/output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/static/media/logo-sm.png" />
   
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 <body class="font-sans">
@@ -18,19 +20,7 @@
         <ul class="p-5 flex justify-end">
             
             <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
-                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/data">Data Science & ML</a>
-            </li>
-            
-            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
-                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/3d">Algorithmes 3D</a>
-            </li>
-            
-            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
-                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/web">Fullstack</a>
-            </li>
-            
-            <li class="hidden lg:list-item px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
-                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/">Étude de cas</a>
+                <a class="hover:text-indigo-800 hover:underline underline-offset-2" href="/creations">Portfolio</a>
             </li>
             
             <li class="px-5 first:pl-0 last:pr-0 font-medium text-gray-800">
@@ -45,22 +35,23 @@
 <section class="wrapper bg-indigo-400" id="">
     <div class="container flex flex-wrap gap-4 justify-evenly items-center">
       <div class="max-w-xl">
-        <h1 class="text-5xl mb-8 font-serif font-black">
+        <h1 class="text-4xl md:text-5xl mb-4 md:mb-8 font-serif font-black">
           Nous contacter
         </h1>
-        <h2 class="mb-8">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quas atque explicabo beatae ab quae impedit nesciunt saepe eveniet aliquid officia maiores veritatis optio, incidunt, deserunt est tempore nulla autem.
+        <h2 class="mb-4 md:mb-8">
+          Vous désirez en savoir plus, et êtes intéressés par nos services ? Vous pouvez prendre un rendez-vous en visio pour présenter le projet et expliquer vos besoins.
 
         </h2>
         
         
 <a
     
-
+    
     onclick="Calendly.initPopupWidget({url: 'https://calendly.com/groscot/30min'});return false;"
+    
     class="inline-block font-medium shadow-brut px-8 py-4
         bg-indigo-600 ring-indigo-300 hover:bg-indigo-700 text-indigo-50 ">
-    Prendre rendez-vous pour une visio
+    Prendre rendez-vous (avec Calendly)
 </a>
 
         
@@ -82,11 +73,62 @@ function do_scroll() {
   });
 }
 </script>
+<section class="wrapper bg-slate" id="devis">
+    <div class="container">
+      <h3 class="md:text-4xl text-2xl text-center md:pb-4 font-serif">Demander un devis</h3>
+      <p class="max-w-2xl mx-auto">
+        <center> Notre TJM (<i>Taux Journalier Moyen</i>) varie en fonction du projet et du domaine. Ces tarifs sont donnés à titre indicatif. </center>
+
+      </p>
+      <div class="grid lg:grid-cols-3 gap-12 mt-8">
+        
+        <div>
+          
+          <img class="w-auto h-48 mx-auto" src="/static/media/undraw_developer_activity_re_39tg.png" alt="Développement Web <br> <span class=''>~ 700€</span>
+">
+          
+          <h4 class="text-xl md:text-2xl text-center mb-2 md:mb-4 font-serif">Développement Web <br> <span class=''>~ 700€</span>
+</h4>
+          <p>
+            
+          </p>
+          
+        </div>
+        
+        <div>
+          
+          <img class="w-auto h-48 mx-auto" src="/static/media/undraw_predictive_analytics_re_wxt8.png" alt="Machine Learning <br> <span class=''>~ 800€</span>
+">
+          
+          <h4 class="text-xl md:text-2xl text-center mb-2 md:mb-4 font-serif">Machine Learning <br> <span class=''>~ 800€</span>
+</h4>
+          <p>
+            
+          </p>
+          
+        </div>
+        
+        <div>
+          
+          <img class="w-auto h-48 mx-auto" src="/static/media/undraw_mathematics_-4-otb.png" alt="Algorithmes 3D <br> <span class=''>~ 750€</span>
+">
+          
+          <h4 class="text-xl md:text-2xl text-center mb-2 md:mb-4 font-serif">Algorithmes 3D <br> <span class=''>~ 750€</span>
+</h4>
+          <p>
+            
+          </p>
+          
+        </div>
+        
+      </div>
+    </div>
+</section>
 <section class="wrapper bg-yellow-50" id="">
     <div class="container">
         <h3 class="text-4xl text-center pb-8 font-serif">Une autre demande ?</h3>
         <p class="max-w-2xl mx-auto">
-            <center>Vous pouvez nous envoyer un mail à <b>contact@groscot.com</b></center>
+            <center>Vous pouvez nous envoyer un mail à <b>elgroscot@gmail.com</b> <br>ou bien remplir ce formulaire :</center>
         </p>
         <form class="block max-w-lg mx-auto">
         
@@ -95,6 +137,7 @@ function do_scroll() {
             
             <input type="text" value=""
             
+            id="form_Nom"
             class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
             focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
             disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -108,8 +151,9 @@ function do_scroll() {
         <label class="block mt-4 first:mt-0">
             <span class="block text-sm font-medium text-slate-700">Email</span>
             
-            <input type="password" value=""
+            <input type="text" value=""
             
+            id="form_Email"
             class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
             focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
             disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -125,6 +169,7 @@ function do_scroll() {
             
             <textarea rows="5"
             
+            id="form_Message"
             class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
             focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500
             disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -135,12 +180,28 @@ function do_scroll() {
             
         </label>
         
+        <div class="hidden bg-yellow-100 border-t border-b border-yellow-500 text-yellow-700 px-4 py-3 mt-8" id="successBanner" role="alert">
+            <p class="font-bold" id="successWait">
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-yellow inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Envoi en cours…
+            </p>
+            <p class="hidden text-sm text-red-700" id="successError">
+                Erreur du serveur, merci d'envoyer un mail directement à <b>elgroscot@gmail.com</b>
+            </p>
+            <p class="hidden text-sm" id="successFinish">
+                Message envoyé !
+            </p>
+        </div>
         <div class="mt-12 text-center">
             
 <a
     
-
-    onclick=""
+    
+    onclick="sendMail();"
+    
     class="inline-block font-medium shadow-brut px-4 py-2
     bg-white hover:bg-yellow-100 text-yellow-600 border border-solid border-yellow-600 ring-yellow-600 ">
     Envoyer
@@ -150,48 +211,59 @@ function do_scroll() {
         </form>
     </div>
 </section>
+<script>
+function sendMail() {
+    var name = document.querySelector("#form_Nom").value;
+    var mail = document.querySelector("#form_Email").value;
+    var message = document.querySelector("#form_Message").value.replaceAll("\r\n", "<br>").replaceAll("\n", "<br>");
+    
+    // show banner
+    document.querySelector("#successBanner").classList.remove("hidden");
+
+    var subject = `[GTECH] Message de ${name} (${mail})`;
+    var body = message + `<br><br>${mail}`;
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "gfyck@inboxen.org",
+        Password : "215C65B429E750C540C61E11951F0384297C",
+        To : 'elgroscot@gmail.com',
+        From : "gfyck@inboxen.org",
+        Subject : subject,
+        Body : body
+    }).then(
+    message => {
+        document.querySelector("#successWait").classList.add("hidden")
+        if (message == "OK") {
+            document.querySelector("#successFinish").classList.remove("hidden");
+        } else {
+            document.querySelector("#successError").classList.remove("hidden");
+        }
+    }
+    );
+}
+</script>
 
 </div>
 
 <section class="wrapper bg-white">
     <div class="container">
-        <div class="flex items-center mb-4">
-        <img src="/static/media/logo.png" class="w-8 h-8 m-0 mr-3" />
-        <h3 class="font-serif text-2xl font-semibold">Groscot Tech</h3>
-        </div>
         <div class="grid lg:grid-cols-3 gap-12">
             <div>
-                <h3 class="text-xl font-medium pb-3">Notre expertise</h3>
-                <ul>
-                    
-                    <li class="text-sm py-1 last:pb-0 ">
-    <a class="hover:underline" href="/data">Data Science & ML</a>
-</li>
-                    
-                    <li class="text-sm py-1 last:pb-0 ">
-    <a class="hover:underline" href="/3d">Algorithmes 3D</a>
-</li>
-                    
-                    <li class="text-sm py-1 last:pb-0 ">
-    <a class="hover:underline" href="/web">Fullstack</a>
-</li>
-                    
-                </ul>
+                <div class="flex items-center mb-4">
+                    <img src="/static/media/logo.png" class="w-8 h-8 m-0 mr-3" />
+                    <h3 class="font-serif text-2xl font-semibold">Groscot Tech</h3>
+                </div>
             </div>
             <div>
                 <h3 class="text-xl font-medium pb-3">Travailler avec nous</h3>
                 <ul>
                     
                     <li class="text-sm py-1 last:pb-0 ">
-    <a class="hover:underline" href="/consulting#methode">Notre méthode de travail</a>
+    <a class="hover:underline" href="/creations">Nos créations</a>
 </li>
                     
                     <li class="text-sm py-1 last:pb-0 ">
-    <a class="hover:underline" href="/consulting#charte">Charte du consultant</a>
-</li>
-                    
-                    <li class="text-sm py-1 last:pb-0 ">
-    <a class="hover:underline" href="/consulting#devis">Demander un devis</a>
+    <a class="hover:underline" href="/contact#devis">Demander un devis</a>
 </li>
                     
                 </ul>
